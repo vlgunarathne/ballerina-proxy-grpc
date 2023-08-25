@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package viduranga.proxy.grpc;
+
+service ProxyService {
+    rpc SayHelloProxy (HelloProxyRequest) returns (HelloProxyReply) {}
+    rpc SayHelloStreamProxy (HelloProxyRequest) returns (stream HelloReply) {}
+}
+
+message HelloProxyRequest {
+    string name = 1;
+}
+  
+message HelloProxyReply {
+  string message = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}

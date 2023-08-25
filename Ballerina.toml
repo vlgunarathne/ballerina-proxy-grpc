@@ -1,0 +1,8 @@
+[package]
+org = "viduranga"
+name = "ballerina_proxy_grpc"
+version = "0.1.0"
+distribution = "2201.5.0"
+
+[build-options]
+observabilityIncluded = true
